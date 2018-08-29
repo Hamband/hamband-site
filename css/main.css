@@ -51,6 +51,10 @@ header nav {
 
 }
 
+header nav i {
+    color: #C81D11;
+}
+
 header .logo img {
     height: 125px;
 }
@@ -111,9 +115,13 @@ header #searchForm input[type=text] {
 }
 
 #menu ul li a .fas {
-    padding-left: 5px!important;
+    padding-left: 5px !important;
 }
 
 .clear {
     clear: both;
+}
+
+#home-slideshow .lightSlider {
+    padding: 0 !important;
 }
