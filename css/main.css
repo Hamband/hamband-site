@@ -1,0 +1,119 @@
+@font-face {
+    font-family: 'WYekan';
+    src: url('../fonts/WebYekan.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/WebYekan.woff') format('woff'),
+    url('../fonts/WebYekan.ttf') format('truetype'),
+    url('../fonts/WebYekan.svg') format('svg');
+}
+
+@font-face {
+    font-family: 'WYekan';
+    src: url('../fonts/WebYekan.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/WebYekan.woff') format('woff'),
+    url('../fonts/WebYekan.ttf') format('truetype'),
+    url('../fonts/WebYekan.svg') format('svg');
+    font-weight: bold
+}
+
+html {
+    direction: rtl;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background: #f1f1f1;
+    color: #1B1B1B;
+    font-size: 16px;
+    font-family: WYekan, Tahoma;
+}
+
+a {
+    color: #1B1B1B;
+    text-decoration: none;
+}
+
+header {
+    margin: 10px 50px;
+    height: 125px;
+}
+
+header .logo {
+    float: right;
+}
+
+header nav {
+    float: right;
+    margin: 32.5px 10px 0;
+    padding: 15px;
+    border-right: 1px solid #a0a0a0;
+    font-size: 1.2em;
+
+}
+
+header .logo img {
+    height: 125px;
+}
+
+header #searchForm {
+    float: left;
+    border-bottom: 1px solid #a0a0a0;
+    margin: 47px 0 0 20px;
+}
+
+header #searchForm input[type=text] {
+    background: none;
+    border: none;
+    font-family: WYekan, Tahoma;
+    font-size: 1.1em;
+    padding: 0.1em;
+    outline: none;
+}
+
+#menu {
+    margin: 0;
+    border-top: 1px solid #dde1e1;
+    border-bottom: 1px solid #dde1e1;
+}
+
+#menu ul {
+    margin: 0 30px;
+    list-style: none;
+    font-size: 1.1em;
+    height: 67px;
+}
+
+#menu ul li {
+    float: right;
+}
+
+#menu ul li.secondary {
+    float: left;
+}
+
+#menu ul li:first-child a, #menu ul .secondary:last-child a {
+    border-right: 1px solid #dde1e1;
+}
+
+#menu ul li a {
+    display: block;
+    padding: 20px;
+    border-left: 1px solid #dde1e1;
+}
+
+#menu ul li a:hover {
+    background: #f7f7f7;
+}
+
+#menu ul li.active a {
+    background: #00A491;
+    color: #fff;
+}
+
+#menu ul li a .fas {
+    padding-left: 5px!important;
+}
+
+.clear {
+    clear: both;
+}
