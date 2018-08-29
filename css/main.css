@@ -15,6 +15,10 @@
     font-weight: bold
 }
 
+.ui.card>.content>.header, .ui.cards>.card>.content>.header, .ui.button {
+    font-family: WYekan, Tahoma;
+}
+
 html {
     direction: rtl;
 }
@@ -84,7 +88,7 @@ header #searchForm input[type=text] {
     margin: 0 30px;
     list-style: none;
     font-size: 1.1em;
-    height: 67px;
+    height: 62px;
 }
 
 #menu ul li {
@@ -124,4 +128,9 @@ header #searchForm input[type=text] {
 
 #home-slideshow .lightSlider {
     padding: 0 !important;
+}
+
+#home-slideshow {
+    margin-bottom: 20px;
+    clear: both;
 }
