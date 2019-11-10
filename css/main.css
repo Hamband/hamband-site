@@ -35,11 +35,12 @@ a {
 }
 
 header {
-  margin: 10px 50px;
+  padding: 10px 50px;
 }
 @media (max-width: 767px) {
   header {
-    margin: 10px;
+    padding: 10px;
+    background: #fff;
   }
 }
 header .navbar-toggler {
@@ -94,7 +95,7 @@ header #searchForm input[type=text] {
 }
 .hamband-top-menu ul {
   list-style: none;
-  font-size: 1.1em;
+  font-size: 1.02em;
 }
 @media (min-width: 768px) {
   .hamband-top-menu ul li:first-child a {
@@ -103,7 +104,7 @@ header #searchForm input[type=text] {
 }
 .hamband-top-menu ul li .nav-link {
   display: block;
-  padding: 20px;
+  padding: 20px 15px !important;
 }
 @media (min-width: 768px) {
   .hamband-top-menu ul li .nav-link {
@@ -144,6 +145,40 @@ header #searchForm input[type=text] {
 
 .events .card {
   margin: 0 0 10px 10px;
+}
+
+.posts-blog-select {
+  background: #00A491;
+  border-bottom: 1px solid #ccc;
+  padding: 0;
+  display: none;
+}
+.posts-blog-select a {
+  padding: 15px 2rem;
+  font-size: 1.4em;
+  color: #eee;
+  font-weight: bold;
+}
+.posts-blog-select a:hover {
+  color: #eee;
+}
+.posts-blog-select a.active {
+  border-bottom: 4px solid #fff;
+  padding-bottom: 11px;
+  color: #fff;
+}
+
+@media (max-width: 767px) {
+  .events, .blog--posts {
+    display: none;
+  }
+  .events.active, .blog--posts.active {
+    display: block;
+  }
+
+  .posts-blog-select {
+    display: flex;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

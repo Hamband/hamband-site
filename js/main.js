@@ -4,7 +4,7 @@ $('#home-slideshow div').lightSlider({
     item: 1,
     slideMargin: 0,
     loop: true,
-    adaptiveHeight:true,
+    adaptiveHeight: true,
     controls: false,
     enableDrag: false,
     enableTouch: false,
@@ -13,3 +13,17 @@ $('#home-slideshow div').lightSlider({
     speed: 2000,
     mode: 'fade'
 });
+
+function initilazeMenu() {
+    var lastActiveClass = 'events';
+    $('.posts-blog-select .nav-link').on('click', function () {
+        var currentClass = '.' + $(this).attr('data-hamband-to-show');
+        if (!$(this).hasClass('active')) {
+            $(lastActiveClass).removeClass('active');
+            $(currentClass).addClass('active');
+            lastActiveClass = currentClass;
+        }
+    });
+}
+
+initilazeMenu();
